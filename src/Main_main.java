@@ -35,13 +35,12 @@ public class Main_main {
                 System.out.println("3 - Multiplicação");
                 System.out.println("4 - Divisão");
 
-
-                System.out.println("Pode Digitar a Que Você Deseja");
+                System.out.println("Por Favor Digitar a Operação Desejada!");
                 Scanner vaLues = new Scanner(System.in);
                 int calCal;
                 calCal = vaLues.nextInt();
+                System.out.println("Operação Escolhida: " + calCal);
                 System.out.println("--------------------------------------------------");
-
 
                 System.out.println("Agora Digite Os Valores Que Deseja Para a Operação");
                 System.out.println("Digite o primeiro valor: ");
@@ -53,19 +52,21 @@ public class Main_main {
                 int cal2;
                 cal2 = val2.nextInt();
 
+                System.out.println("O Primeiro Valor Digitado Foi: " + cal1);
+                System.out.println("O Segundo Valor Digitado Foi: " + cal2);
 
                 switch (calCal) {
                     case 1:
-                        System.out.println("");
+                        System.out.println("O Resultado da Sua Soma É: " + (cal1+cal2));
                         break;
                     case 2:
-                        System.out.println("");
+                        System.out.println("O Resultado da Sua Subtração É: " + (cal1-cal2));
                         break;
                     case 3:
-                        System.out.println("");
+                        System.out.println("O Resultado da Sua Multiplicação É: " + (cal1*cal2));
                         break;
                     case 4:
-                        System.out.println("");
+                        System.out.println("O Resultado da Sua Divisão É: " + (cal1/cal2));
                         break;
                     default:
                         System.out.println("ERRO!");
